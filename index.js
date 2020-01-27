@@ -26,7 +26,7 @@ class App extends Component {
     .then(data =>{
         console.log(data);
          this.setState({ users:data, loading:false})
-    })
+    });
   }
   render() {
     if(this.state.loading ){
