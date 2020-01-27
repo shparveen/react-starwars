@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
+import backgroundimage from './120px-Star_Wars_Logo.svg.png';
 
 class App extends Component {
    state = {
@@ -43,27 +43,11 @@ class App extends Component {
 
 const {loading,person,users} = this.state
     return (
-      <div>
-      <h1>Users</h1>
-      
-          {users.map(userdata=>(
-            <p> Name: {userdata.name} | email: {userdata.email}</p>
-          ))}
-      
-      <div>
-          <div>
-                <div>{person.name.title}</div>
-                <div>{person.name.first}</div>
-                <div>{person.name.last}</div>
-                <div><img src={person.picture.large} /></div>
-            </div>
-        </div>
-
       <div class="page-wrapper">
         <div class="app-home">
             <div class="question-box">
                 <div class="logo-wrapper">
-                    <img src="./assets/images/120px-Star_Wars_Logo.svg.png" alt="" />
+                    <img src="{backgroundimage}" alt="" />
                 </div>
                 <div class="cta">
                     <a href="" title="Button push" class="button btnPush btnYellow"><i class="mr-10 fa fa-star" aria-hidden="true"></i>
@@ -93,7 +77,6 @@ const {loading,person,users} = this.state
             </div>
         </div>
      </div> 
-    </div>
     );
 
     
