@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
-import backgroundimage from './120px-Star_Wars_Logo.svg.png';
+import backgroundimage from './Star_Wars_Logo.png';
 
 class App extends Component {
    state = {
@@ -47,7 +47,7 @@ const {loading,person,users} = this.state
         <div class="app-home">
             <div class="question-box">
                 <div class="logo-wrapper">
-                    <img src="{backgroundimage}" alt="" />
+                    <img src="{backgroundimage}"  width='100px' height="100px"alt="website logo" />
                 </div>
                 <div class="cta">
                     <a href="" title="Button push" class="button btnPush btnYellow"><i class="mr-10 fa fa-star" aria-hidden="true"></i>
